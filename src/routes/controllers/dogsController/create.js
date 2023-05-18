@@ -31,7 +31,7 @@ const createDog = async (req, res) => {
         newBreed.addTemperament(newBreedTemperaments)
         res.send(newBreed)        
     } catch (error) {
-        res.json({error: error})
+        res.json({error: error.message})
     }
 }
 
